@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whichfloor</title>
+</head>
+<body>
+    <script>
+        var maximum_stores = 60;
+        var usernum = parseInt(prompt("On what floor of the building is your office?"));
+
+        while (usernum > maximum_stores) {
+            console.log("you entered " + usernum + "but there are only" + maximum_stores + "floors in the building.. try again" );
+            usernum = parseInt(prompt("On what floor of the building is your office?"));
+
+        }
+        
+
+        console.log("congrats you work on floor" + usernum);
+
+    </script>
+</body>
+</html>

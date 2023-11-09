@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gimme my number</title>
+</head>
+<body>
+    <script>
+        var userinput = parseInt(prompt("Gimme a number please"), 10);
+
+        while(userinput <= 100) {
+            console.log(userinput + "IS LESS THAN 100, TRY AGAIN..");
+            userinput = parseInt(prompt("Nope.. not what i asked for. Gimme a number that is greater then 100"), 10);
+        }
+
+
+        console.log(userinput + " Is greater then 100 great job!!")
+
+
+
+    </script>
+</body>
+</html>
