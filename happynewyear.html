@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Happy New Year </title>
+</head>
+<body>
+	<script>
+		function Countdown(start)
+        {
+			console.log(start);
+			let nextNumber = start - 1;
+
+			if(nextNumber > 0){
+				Countdown(nextNumber);
+			} 
+            else{
+				console.log("HAPPY NEW YEAR!!!!!!");
+			}
+		}
+
+		var count = parseInt(prompt("How many seconds is there until New Year’s Eve?"));
+		Countdown(count);
+	</script>
+</body>
+</html>
